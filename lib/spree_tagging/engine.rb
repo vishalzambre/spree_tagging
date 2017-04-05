@@ -1,8 +1,21 @@
 module SpreeTagging
   class Engine < Rails::Engine
     require 'spree/core'
+    require 'acts-as-taggable-on'
     isolate_namespace Spree
     engine_name 'spree_tagging'
+
+    # if ActsAsTaggableOn::Utils.using_mysql?
+    #   ActsAsTaggableOn.force_binary_collation = true
+    # end
+
+    ActsAsTaggableOn::Tag.class_eval do
+      self.table_name_prefix = 'spree_'
+    end
+
+    ActsAsTaggableOn::Tagging.class_eval do
+      self.table_name_prefix = 'spree_'
+    end
 
     # use rspec for tests
     config.generators do |g|
