@@ -1,7 +1,7 @@
 SpreeTagging
 ============
 
-Introduction goes here.
+It provides supports to use tagging concept with product or any models. Right now it is implemented with products. This feature is already merged in `3-2-stable`
 
 ## Installation
 

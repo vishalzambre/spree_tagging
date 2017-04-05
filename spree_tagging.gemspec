@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.author    = 'Vishal Zambre'
   s.email     = 'v.zambre@gmail.com'
-  s.homepage  = 'http://githum.com/vishalzambre/spree_tagging'
+  s.homepage  = 'https://github.com/vishalzambre/spree_tagging'
   s.license = 'BSD-3'
 
   # s.files       = `git ls-files`.split("\n")
