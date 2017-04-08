@@ -2,14 +2,14 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_tagging'
-  s.version     = '3.1.4'
+  s.version     = '3.1.0'
   s.summary     = 'Support to tag products'
   s.description = 'It provide feature to tag products, This feature is already included by me in spree 3.2.x version but extension is created for lower versions'
   s.required_ruby_version = '>= 2.1.0'
 
   s.author    = 'Vishal Zambre'
   s.email     = 'v.zambre@gmail.com'
-  s.homepage  = 'https://github.com/vishalzambre/spree_tagging'
+  s.homepage  = 'http://githum.com/vishalzambre/spree_tagging'
   s.license = 'BSD-3'
 
   # s.files       = `git ls-files`.split("\n")
@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 3.1.4'
+  s.add_dependency 'spree_core', '~> 3.1.0'
   s.add_dependency 'acts-as-taggable-on', '~> 3.4'
 
   s.add_development_dependency 'capybara', '~> 2.6'
